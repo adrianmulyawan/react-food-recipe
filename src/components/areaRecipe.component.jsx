@@ -30,7 +30,7 @@ const AreaRecipeComponent = () => {
               areas && (
                 areas.map((area, index) => {
                   return (
-                    <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2 my-2" key={ index }>
+                    <div className="col-xs-4 col-sm-4 col-md-3 col-lg-2 my-2" key={ index }>
                       <div className="card border-0" style={{ backgroundColor: '#02A057', color: 'white', borderRadius: '10px' }}>
                         <div className="card-body">
                           <h5 className="card-title">
