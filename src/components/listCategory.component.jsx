@@ -31,7 +31,7 @@ const ListCategoryComponent = () => {
                 recipeCategories.map((category) => {
                   return (
                     <div className="col-xs-6 col-sm-6 col-md-4 col-lg-2 my-2" key={ category.idCategory }>
-                      <div className="card border-0">
+                      <div className="card border-0" style={{ backgroundColor: '#F2F2F2' }}>
                         <img src={ category.strCategoryThumb } className="card-img-top" alt="category-thumbnail col-sm-none" style={{ width: '75%' }} />
                         <div className="card-body">
                           <h5 className="card-title">{ category.strCategory }</h5>

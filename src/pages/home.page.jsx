@@ -6,12 +6,13 @@ import MustTryRecipeComponent from '../components/mustTryRecipe.component';
 import AreaRecipeComponent from '../components/areaRecipe.component';
 import MessageUpdateComponent from '../components/messageUpdate.component';
 import FooterComponent from '../components/footer.component';
+import styles from '../styles/home.module.css';
 
 const HomePage = () => {
   return (
     <>
       <NavbarComponent />
-      <div className="container mt-3">
+      <div className={`container mt-3 ${styles.body}`}>
         <CarouselComponent />
         <ListCategoryComponent />
         <MustTryRecipeComponent />
