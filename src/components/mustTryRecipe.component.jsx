@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const MustTryRecipeComponent = () => {
   const [recipeOne, setRecipeone] = useState({});
   const [recipeTwo, setRecipeTwo] = useState({});
   const [recipeThree, setRecipeThree] = useState({});
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     const getRecipeOne = async () => {
@@ -33,7 +36,11 @@ const MustTryRecipeComponent = () => {
     getRecipeThree();
   }, []);
 
-  console.info(recipeOne, '=> random resep');
+  const toRecipe = () => {
+    navigate('/recipe');
+  }
+
+  // console.info(recipeOne, '=> random resep');
 
   return (
     <>
@@ -103,7 +110,7 @@ const MustTryRecipeComponent = () => {
 
         <div className="recipe-more" style={{ marginTop: '8px' }}>
           <div class="d-grid gap-2 col-6 mx-auto">
-            <button type="button" class="btn btn-lg btn-primary text-center px-3 py-2 border-0" style={{ backgroundColor: 'red', borderRadius: '15px' }}>
+            <button onClick={ toRecipe } class="btn btn-lg btn-primary text-center px-3 py-2 border-0" style={{ backgroundColor: 'red', borderRadius: '15px' }}>
               <b>See More Recipe</b>
             </button>
           </div>
