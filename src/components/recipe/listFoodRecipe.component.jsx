@@ -22,8 +22,8 @@ const ListFoodRecipeComponent = () => {
     getFoodRecipes();
   }, [query]);
 
-  // console.info(recipes, '=> resep');
-  console.info(query, '=> aku tulis');
+  console.info(recipes, '=> resep');
+  // console.info(query, '=> aku tulis');
 
   return (
     <>
@@ -37,10 +37,10 @@ const ListFoodRecipeComponent = () => {
         </div>
         <div className="row d-flex justify-content-center" style={{ marginTop: '24px' }}>
           {
-            recipes && recipes.map((recipe) => {
+            recipes && recipes.map((recipe, index) => {
               return (
                 <>
-                  <div className="col-sm-6 col-md-4 col-lg-3 py-2" key={ recipe.idMeal }>
+                  <div className="col-sm-6 col-md-4 col-lg-3 py-2" key={ index += 1 }>
                     <div className="card" style={{ borderRadius: 10 }}>
                       <img src={ recipe.strMealThumb } className="card-img-top" alt="recipe-banner" style={{ borderTopLeftRadius: 10, borderTopRightRadius: 10, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} />
                       <div className="card-body">
