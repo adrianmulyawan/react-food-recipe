@@ -34,8 +34,8 @@ const NavbarComponent = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">
-                  Link
+                <a className="nav-link" href='/recipe'>
+                  Recipe
                 </a>
               </li>
               <li className="nav-item dropdown">
