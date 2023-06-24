@@ -13,8 +13,8 @@ const MessageUpdateComponent = () => {
               <h2 className='text-bold'>
                 Get the latest recipe updates by registering now!
               </h2>
-              <div className="input-group mb-3">
-                <input type="text" className="form-control" placeholder="Recipient's username" aria-label="Email Address.." aria-describedby="button-addon2" />
+              <div className="input-group" style={{ marginTop: '10px', marginBottom: '10px' }}>
+                <input type="text" className="form-control" placeholder="Your Email Address..." />
                 <button className="btn btn-outline-secondary" type="button" id="button-addon2" style={{ backgroundColor: '#02A057', color: 'white' }}>Button</button>
               </div>
             </div>
