@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import Logo from '../images/logo.png'
 
 const NavbarComponent = () => {
   const navigate = useNavigate();
@@ -13,7 +14,7 @@ const NavbarComponent = () => {
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container">
           <Link className="navbar-brand" onClick={ goHome }>
-            <img src={process.env.PUBLIC_URL+"logo.jpeg"} alt="Bootstrap" width="60" height="60" /> <b>Masak Apa</b>
+            <img src={ Logo } alt="Bootstrap" width="60" height="60" /> <b>Masak Apa</b>
           </Link>
           <button
             className="navbar-toggler"
