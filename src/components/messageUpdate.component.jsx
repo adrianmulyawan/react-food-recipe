@@ -9,7 +9,7 @@ const MessageUpdateComponent = () => {
             <img src={process.env.PUBLIC_URL+"newsletter.jpg"} alt="message-banner" style={{ borderRadius: '10px' }} />
           </div>
           <div className="col-xs-6 col-sm-6 col-md-12 col-lg-6 my-2 p-2">
-            <div className="card border-0 my-5" style={{ backgroundColor: '#F2F2F2' }}>
+            <div className="card border-0 my-5" style={{ backgroundColor: '#fff' }}>
               <h2 className='text-bold'>
                 Get the latest recipe updates by registering now!
               </h2>
