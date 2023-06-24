@@ -1,7 +1,6 @@
 import React from 'react';
 
 const BreadcrumbComponent = (props) => {
-  console.info(props, '=> breadcrumbs baru')
   return (
     <>
       <div className="breadcrumb-recipe-component" style={{ paddingTop: '20px', paddingBottom: '0px' }}>
