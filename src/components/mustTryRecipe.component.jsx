@@ -109,7 +109,7 @@ const MustTryRecipeComponent = () => {
         </div>
 
         <div className="recipe-more" style={{ marginTop: '8px' }}>
-          <div class="d-grid gap-2 col-6 mx-auto">
+          <div className="d-grid gap-2 col-6 mx-auto">
             <button onClick={ toRecipe } className="btn btn-lg btn-primary text-center px-3 py-2 border-0" style={{ backgroundColor: 'red', borderRadius: '15px' }}>
               <b>See More Recipe</b>
             </button>
