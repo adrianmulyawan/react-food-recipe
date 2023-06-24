@@ -39,24 +39,22 @@ const ListFoodRecipeComponent = () => {
           {
             recipes && recipes.map((recipe, index) => {
               return (
-                <>
-                  <div className="col-sm-6 col-md-4 col-lg-3 py-2" key={ index += 1 }>
-                    <div className="card" style={{ borderRadius: 10 }}>
-                      <img src={ recipe.strMealThumb } className="card-img-top" alt="recipe-banner" style={{ borderTopLeftRadius: 10, borderTopRightRadius: 10, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} />
-                      <div className="card-body">
-                        <h5 className="card-title">
-                          { recipe.strMeal }
-                        </h5>
-                        <p className="card-text">
-                          Origin: { recipe.strArea }
-                        </p>
-                        <p className='card-text' style={{ marginTop: 0 }}>
-                          Category: { recipe.strCategory }
-                        </p>
-                      </div>
+                <div className="col-sm-6 col-md-4 col-lg-3 py-2" key={ index += 1 }>
+                  <div className="card" style={{ borderRadius: 10 }}>
+                    <img src={ recipe.strMealThumb } className="card-img-top" alt="recipe-banner" style={{ borderTopLeftRadius: 10, borderTopRightRadius: 10, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} />
+                    <div className="card-body">
+                      <h5 className="card-title">
+                        { recipe.strMeal }
+                      </h5>
+                      <p className="card-text">
+                        Origin: { recipe.strArea }
+                      </p>
+                      <p className='card-text' style={{ marginTop: 0 }}>
+                        Category: { recipe.strCategory }
+                      </p>
                     </div>
                   </div>
-                </>
+                </div>
               )
             })
           }
