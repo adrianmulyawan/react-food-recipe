@@ -40,6 +40,13 @@ const MustTryRecipeComponent = () => {
     navigate('/recipe');
   }
 
+  const toDetailRecipe = (recipe) => {
+    // console.info(recipe, '=> recipe id');
+    const getIdRecipe = recipe.idMeal;
+    // console.info(getIdRecipe, '=> idnya');
+    navigate(`/recipe/detail/${getIdRecipe}`);
+  };
+
   // console.info(recipeOne, '=> random resep');
 
   return (
@@ -54,10 +61,10 @@ const MustTryRecipeComponent = () => {
             {
               recipeOne && (
                 <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4 my-2">
-                  <div className="card border-0" style={{ borderRadius: '15px' }}>
-                    <img src={ recipeOne.strMealThumb } className="card-img-top img-thumbnail rounded mx-auto d-block" alt="receipt-img" />
+                  <div className="card border-0" style={{ borderRadius: '15px', cursor: 'pointer' }} onClick={ () => toDetailRecipe(recipeOne) }>
+                    <img src={ recipeOne.strMealThumb } style={{ cursor: 'pointer' }} className="card-img-top img-thumbnail rounded mx-auto d-block" alt="receipt-img" />
                     <div className="card-body">
-                      <h5 className="card-title">{ recipeOne.strMeal }</h5>
+                      <h5 className="card-title" style={{ cursor: 'pointer' }}>{ recipeOne.strMeal }</h5>
                     </div>
                   </div>
                 </div>
@@ -66,10 +73,10 @@ const MustTryRecipeComponent = () => {
             {
               recipeTwo && (
                 <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4 my-2">
-                  <div className="card border-0" style={{ borderRadius: '15px' }}>
-                    <img src={ recipeTwo.strMealThumb } className="card-img-top img-thumbnail rounded mx-auto d-block" alt="receipt-img" />
+                  <div className="card border-0" style={{ borderRadius: '15px', cursor: 'pointer' }} onClick={ () => toDetailRecipe(recipeTwo) }>
+                    <img src={ recipeTwo.strMealThumb } style={{ cursor: 'pointer' }} className="card-img-top img-thumbnail rounded mx-auto d-block" alt="receipt-img" />
                     <div className="card-body">
-                      <h5 className="card-title">{ recipeTwo.strMeal }</h5>
+                      <h5 className="card-title" style={{ cursor: 'pointer' }}>{ recipeTwo.strMeal }</h5>
                     </div>
                   </div>
                 </div>
@@ -78,10 +85,10 @@ const MustTryRecipeComponent = () => {
             {
               recipeThree && (
                 <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4 my-2">
-                  <div className="card border-0" style={{ borderRadius: '15px' }}>
-                    <img src={ recipeThree.strMealThumb } className="card-img-top img-thumbnail rounded mx-auto d-block" alt="receipt-img" />
+                  <div className="card border-0" style={{ borderRadius: '15px', cursor: 'pointer' }} onClick={ () => toDetailRecipe(recipeThree) }>
+                    <img src={ recipeThree.strMealThumb } style={{ cursor: 'pointer' }} className="card-img-top img-thumbnail rounded mx-auto d-block" alt="receipt-img" />
                     <div className="card-body">
-                      <h5 className="card-title">{ recipeThree.strMeal }</h5>
+                      <h5 className="card-title" style={{ cursor: 'pointer' }}>{ recipeThree.strMeal }</h5>
                     </div>
                   </div>
                 </div>
