@@ -58,12 +58,6 @@ const MustTryRecipeComponent = () => {
                     <img src={ recipeOne.strMealThumb } className="card-img-top img-thumbnail rounded mx-auto d-block" alt="receipt-img" />
                     <div className="card-body">
                       <h5 className="card-title">{ recipeOne.strMeal }</h5>
-                      <p className="card-text">
-                        Category: { recipeOne.strCategory }
-                      </p>
-                      <p className="card-text">
-                        From: { recipeOne.strArea }
-                      </p>
                     </div>
                   </div>
                 </div>
@@ -76,12 +70,6 @@ const MustTryRecipeComponent = () => {
                     <img src={ recipeTwo.strMealThumb } className="card-img-top img-thumbnail rounded mx-auto d-block" alt="receipt-img" />
                     <div className="card-body">
                       <h5 className="card-title">{ recipeTwo.strMeal }</h5>
-                      <p className="card-text">
-                        Category: { recipeTwo.strCategory }
-                      </p>
-                      <p className="card-text">
-                        From: { recipeTwo.strArea }
-                      </p>
                     </div>
                   </div>
                 </div>
@@ -94,12 +82,6 @@ const MustTryRecipeComponent = () => {
                     <img src={ recipeThree.strMealThumb } className="card-img-top img-thumbnail rounded mx-auto d-block" alt="receipt-img" />
                     <div className="card-body">
                       <h5 className="card-title">{ recipeThree.strMeal }</h5>
-                      <p className="card-text">
-                        Category: { recipeThree.strCategory }
-                      </p>
-                      <p className="card-text">
-                        From: { recipeThree.strArea }
-                      </p>
                     </div>
                   </div>
                 </div>
